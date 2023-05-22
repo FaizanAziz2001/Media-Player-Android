@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:padding="10sp"
+        android:src="@drawable/m">
+    </ImageView>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:padding="5sp"
+        android:id="@+id/display_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_view"
+        android:textColor="@color/white"
+        android:textSize="17sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/display_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_song"
+        android:layout_toEndOf="@+id/image_view"
+        android:padding="5sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic">
+    </TextView>
+
+</RelativeLayout>

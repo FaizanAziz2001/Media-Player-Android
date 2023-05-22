@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/custom_black"
+    tools:context=".Stream_Video">
+
+
+    <Spinner
+        android:id="@+id/link_Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown">
+    </Spinner>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/link_Spinner"
+        android:id="@+id/flexbox"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        app:justifyContent="space_evenly"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/stream_button"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stream in app">
+        </Button>
+
+
+        <Button
+            android:id="@+id/streamweb_button"
+            android:layout_weight="1"
+            android:text="Stream in Web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <WebView
+        android:id="@+id/Stream_Webview"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/flexbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+    </WebView>
+
+
+
+</RelativeLayout>
