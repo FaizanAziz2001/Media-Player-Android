@@ -3,7 +3,7 @@ A Media Player implemented in JAVA in Android Studio.
 
 **Features:**
 - Fragments have been used rather than multiple activities
-- Built in Video player has been used for running images
+- Built in Video player has been used for running video files
 - Music player has been created using built in audio player.
 - The audio and video are detected from local storage.
 
