@@ -9,7 +9,7 @@ A Media Player implemented in JAVA in Android Studio.
 
 **Functionality:**
 - You can play music from local storage
-- You can watch vidoes from local storage
+- You can watch videos from local storage
 - Stream youtube,spotify from inside the app or open it in web from inside the app
 
 **Screenshots:**
